@@ -11,5 +11,3 @@ def load_resources(self):
     self.manager.resources = DataPersistence.load_data('books.json')
     def save_resources(self):
 
-     DataPersistence.save_data(self.manager.list_resources(),'books.json')
-     
