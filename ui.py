@@ -29,6 +29,17 @@ def run(self):
     while True:
 
         self.display_menu()
+        choice = int(input("Choose an option: "))
+
+        if choice == 1:
+
+            self.create_resource()
+
+        elif choice == 2:
+
+            self.read_resource()
+
         
+
 
 
