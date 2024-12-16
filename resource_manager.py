@@ -13,3 +13,11 @@ def read_resource(self, id: str):
 def update_resource(self, id: str, title: str, author: str, year: int):
 
     book = self.read_resource(id)
+    if book:
+
+        book.title = title
+
+        book.author = author
+
+        book.year = year
+
