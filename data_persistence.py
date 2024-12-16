@@ -1,5 +1,5 @@
 import json
-from book_resource import Resource
+from book_resource import BookResource
 
 class DataPersistence:
     def __init__(self, filename: str):
@@ -11,8 +11,8 @@ def save_data(resources, filename: str):
             json.dump([resource.__dict__ for resource in resources], file)
 
         def load_data(self):
-       try:
+         try:
             with open(self.filename, 'r') as file:
-                return [Resource(**data) for data in json.load(file)]
-        except FileNotFoundError:
-            return []
+                return [BookResource(**data) for data in json.load(file)]
+         except FileNotFoundError:
+          return []
