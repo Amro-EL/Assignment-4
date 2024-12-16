@@ -58,6 +58,13 @@ def run(self):
 def create_resource(self):
 
     id = input("Enter ID: ")
+    title = input("Enter title: ")
+
+    author = input("Enter author: ")
+
+    year = int(input("Enter year: "))
+
+    self.manager.create_resource(id, title, author, year)
 
 
         
