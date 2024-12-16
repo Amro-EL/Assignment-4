@@ -7,6 +7,4 @@ def create_resource(self, id: str, title: str, author: str, year: int):
    book = Book(id, title, author, year)
 
 self.resources.append(book)
-def update_resource(self, id: str, title: str, author: str, year: int):
 
-    book = self.read_resource(id)
