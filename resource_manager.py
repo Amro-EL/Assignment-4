@@ -20,4 +20,10 @@ def update_resource(self, id: str, title: str, author: str, year: int):
         book.author = author
 
         book.year = year
+        def delete_resource(self, id: str):
 
+         self.resources = [book for book in self.resources if book.id != id]
+
+def list_resources(self):
+
+    return self.resources
