@@ -65,7 +65,13 @@ def create_resource(self):
     year = int(input("Enter year: "))
 
     self.manager.create_resource(id, title, author, year)
+    def read_resource(self):
 
+     id = input("Enter the ID of the book to read: ")
+
+    book = self.manager.read_resource(id)
+
+    print(book if book else "Book not found.")
 
 
 
