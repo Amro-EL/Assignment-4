@@ -72,11 +72,21 @@ def create_resource(self):
     book = self.manager.read_resource(id)
 
     print(book if book else "Book not found.")
+    def edit_resource(self):
+
+     id = input("Enter the ID of the book to edit: ")
+
+    title = input("Cover new title: ")
+
+    author = input("Cover new author: ")
+
+    year = int(input("Cover new year: "))
+
+    self.manager.update_resource(id, title, author, year)
 
 
+def delete_resource(self):
 
+    id = input("Cover Enter the ID of the book to delete: ")
 
-        
-
-
-
+    self.manager.delete_resource(id)
