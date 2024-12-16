@@ -1,7 +1,11 @@
-
+from resource_manager import ResourceManager
 
 from data_persistence import DataPersistence
 
-from resource_manager import ResourceManager
-
 class UserInterface:
+    def __init__(self):
+        self.manager = ResourceManager()
+        self.load_resources()
+def load_resources(self):
+
+    self.manager.resources = DataPersistence.load_data('books.json')
