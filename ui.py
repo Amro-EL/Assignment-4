@@ -38,7 +38,26 @@ def run(self):
         elif choice == 2:
 
             self.read_resource()
+        elif choice == 3:
 
+            self.edit_resource()
+
+        elif choice == 4:
+
+            self.delete_resource()
+
+        elif choice == 5:
+
+            self.list_resources()
+
+        elif choice == 6:
+
+            self.save_resources()
+
+            break
+def create_resource(self):
+
+    id = input("Enter ID: ")
         
 
 
