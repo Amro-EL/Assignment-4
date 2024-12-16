@@ -24,5 +24,11 @@ def display_menu(self):
     print("5. List Resources")
 
     print("6. Exit")
-    
+def run(self):
+
+    while True:
+
+        self.display_menu()
+        
+
 
