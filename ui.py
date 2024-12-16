@@ -67,6 +67,9 @@ def create_resource(self):
     self.manager.create_resource(id, title, author, year)
 
 
+
+
+
         
 
 
