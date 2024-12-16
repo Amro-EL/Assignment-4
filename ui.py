@@ -56,8 +56,9 @@ def run(self):
 
             break
 def create_resource(self):
+        resource_id = input("Enter Resource ID: ")
+        name = input("Enter Resource Name: ")
 
-    id = input("Enter ID: ")
         
 
 
